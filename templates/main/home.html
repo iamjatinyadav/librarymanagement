@@ -63,9 +63,9 @@
                     <label for="fname">Seat NO.</label>
                     <select class="form-select" aria-label="Default select example">
                       <option selected>Select Student Seat Number</option>
-                      {% for student in allstudent %}
+                      {% for seatav in seatavailable %}
                      
-                      <option value="{{student.seatno}}">{{student.seatno}}</option>
+                      <option value="{{seatav}}">{{seatav}}</option>
                       
                       {% endfor %}
                     </select>
