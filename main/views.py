@@ -17,6 +17,7 @@ def home(request):
             if y==x:
                 list.remove(y)
                 break
+    
             
     context = {'allstudent':allstudent,'seatavailable':list}
     return render(request, 'main/home.html', context)
